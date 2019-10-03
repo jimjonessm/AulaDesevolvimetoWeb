@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css"  href="styles/estilo.css" />
+        <title>Sistema de Verificação</title>
+    </head>
+<body>
+    <nav class="navegacao">
+        <ul class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">Contato</a></li>                
+        </ul>
+      </nav>
+      <div class="container">
+            <div class="cabecalho">
+                <div class="logo">
+            
+                    <img src="img/ifsudeste.png">
+                
+                </div>
+                <div class="titulo"> 
+                    <p>Sistema de verificação</p>
+                </div>
+            
+            </div>
+            <div class="formulario">
+                    <form action="php/verificav1.php" method="POST">
+                        <div class="item">
+                        <label>
+                            Nome<br>
+                            <input type="text" id="nome" name="nome" required >
+                        </label>
+                    </div>
+                    <div class="item">
+                        <label>
+                                Matrícula<br>
+                                <input type="text" id="matricula" name="matricula" required >
+                        </label>
+                    </div>
+                    <div class="item">
+                        <label>
+                                Nota<br>
+                                <input type="number" id="nota" name="nota" required>
+                        </label>
+                    </div>
+    
+                    <div class="item">
+                            <label>
+                                   <input type="submit" id="enviar" value="Verificar" >
+                            </label>
+                        </div>
+                    </form>
+            </div>
+            <div id="resultado" class="resultado">
+               
+            </div>
+
+      </div>
+</body>
+</html>
